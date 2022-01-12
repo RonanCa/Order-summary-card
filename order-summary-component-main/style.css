@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 34.4%;
+    margin-right: 34.4%;
+    background-color: white;
+    border-radius: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.container p{
+    color: hsl(223, 47%, 23%, 70%);
+    font-size: 16px;
+}
+.hero {
+    display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.music-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 94%, 30%);
+    padding: 15px 15px;
+} 
+.music {
+    border-radius: 50%;
+}
+.music-img h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+.music-img p {
+    margin: 0px;
+    padding-left: 15px;
+}
+.texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.padp {
+    padding-left: 115px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pay {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    margin-top: 25px;
+    padding: 15px 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cancel {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: hsl(223, 47%, 23%, 60%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Activations */
+
+:hover.padp {
+    color: hsl(245, 75%, 52%, 50%);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.9, 0.01, 0, 0.99);
+    transition-delay: 0s;
+    text-decoration: none;
+}
+:hover.pay {
+    background-color: hsl(245, 75%, 52%, 60%);
+}
+:hover.cancel {
+    color: hsl(223, 47%, 23%, 100%);
+}
+
+/* Responsive mobil */
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url('/images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+    }
+    .hero {
+        width: 320px;
+    }
+    .container {
+        margin-left: 7.5%;
+        margin-right: 7.2%;
+    }
+    .music {
+        padding-left: 10px;
+        border-radius: 0px;
+    }
+    .padp {
+        padding-left: 50px;
+    }
+    .pay {
+        font-size: 14px;
+        padding: 15px 60px;
+    }
+}
